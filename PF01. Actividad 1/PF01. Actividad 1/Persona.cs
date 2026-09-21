@@ -12,28 +12,4 @@ public class Persona
 		_edad = edad;
 		_estadoCivil = estadoCivil;
 	}
-
-	public string MostrarDatos()
-	{
-		string datos = $"Nombre: {_nombre} \n Edad: {_edad} Estado civil: ";
-
-		if (EstadoCivil())
-		{
-			datos += "Casado";
-
-		}
-		else
-		{
-			datos += "Soltero";
-		}
-		return datos;
-	}
-	public bool EstadoCivil()
-    {
-		if (_estadoCivil)
-		{
-			return true
-		}
-		return false
-    }
 }
