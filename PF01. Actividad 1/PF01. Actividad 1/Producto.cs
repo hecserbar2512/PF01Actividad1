@@ -15,6 +15,11 @@ namespace PF01._Actividad_1
             _precio = precio;
         }
 
+        public string MostrarDatos()
+        {
+            return $"Nombre: {_nombre} \n Precio: {_precio}";
+        }
+
 
     }
 }
