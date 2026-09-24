@@ -9,5 +9,12 @@ namespace PF01._Actividad_1
         private string _nombre;
         private double _precio;
 
+        public Producto(string nombre, double precio)
+        {
+            _nombre = nombre;
+            _precio = precio;
+        }
+
+
     }
 }
