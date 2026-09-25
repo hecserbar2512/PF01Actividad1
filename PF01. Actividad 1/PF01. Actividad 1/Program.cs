@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Persona persona = new Persona("David", 25, true);
+            persona.EsMayorDeEdad();
         }
     }
 }
