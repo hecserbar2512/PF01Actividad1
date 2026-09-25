@@ -13,6 +13,11 @@ public class Persona
 		_estadoCivil = estadoCivil;
 	}
 
+	public string Nombre{
+        get { return _nombre; }
+        set { _nombre = value; }
+    }
+
 	public string MostrarDatos()
 	{
 		string datos = $"Nombre: {_nombre} \n Edad: {_edad} Estado civil: ";
@@ -32,8 +37,17 @@ public class Persona
     {
 		if (_estadoCivil)
 		{
-			return true
+			return true;
 		}
-		return false
+		return false;
+    }
+
+	public bool EsMayorDeEdad()
+    {
+        if (_edad >= 18)
+        {
+            return true;
+        }
+        return false;
     }
 }
