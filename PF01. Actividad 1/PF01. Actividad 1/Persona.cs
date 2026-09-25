@@ -32,8 +32,17 @@ public class Persona
     {
 		if (_estadoCivil)
 		{
-			return true
+			return true;
 		}
-		return false
+		return false;
+    }
+
+	public bool EsMayorDeEdad()
+    {
+        if (_edad >= 18)
+        {
+            return true;
+        }
+        return false;
     }
 }
