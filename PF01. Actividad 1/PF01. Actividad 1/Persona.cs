@@ -13,6 +13,11 @@ public class Persona
 		_estadoCivil = estadoCivil;
 	}
 
+	public Nombre{
+        get { return _nombre; }
+        set { _nombre = value; }
+    }
+
 	public string MostrarDatos()
 	{
 		string datos = $"Nombre: {_nombre} \n Edad: {_edad} Estado civil: ";
