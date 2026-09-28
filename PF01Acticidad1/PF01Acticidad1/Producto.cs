@@ -14,5 +14,10 @@ namespace PF01Acticidad1
             _nombre = nombre;
             _precio = precio;
         }
+
+        public void MostrarDatos()
+        {
+            Console.WriteLine($"Nombre: {_nombre}, Precio: {_precio:C}");
+        }
     }
 }
