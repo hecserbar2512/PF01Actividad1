@@ -8,5 +8,11 @@ namespace PF01Acticidad1
     {
         private string _nombre { get; set; }
         private decimal _precio { get; set; }
+
+        public Producto(string nombre, decimal precio)
+        {
+            _nombre = nombre;
+            _precio = precio;
+        }
     }
 }
