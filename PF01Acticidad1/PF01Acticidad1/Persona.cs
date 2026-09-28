@@ -9,12 +9,16 @@ namespace PF01Acticidad1
     {
         private string _nombre;
         private int _edad;
-        private bool _estadoCivil;
 
         public Persona(string nombre, int edad)
         {
             _nombre = nombre;
             _edad = edad;
+        }
+        public void MostrarDatos()
+        {
+            Console.WriteLine("Nombre: " + _nombre);
+            Console.WriteLine("Edad: " + _edad);
         }
     }
 }
